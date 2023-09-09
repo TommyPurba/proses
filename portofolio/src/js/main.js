@@ -54,21 +54,35 @@ new Typed('#heading', {
     second.innerHTML = (currentime.getSeconds()<10 ? "0": "") + currentime.getSeconds();
   },1000)
 
-  // const newItem = document.getElementById('item');
-
-  // const duniaDigi = async () => {
-  //   const digiApi = await fetch("https://digimon-api.vercel.app/api/digimon");
-  //   const rensponse = await digiApi.json();
-  //   // let nama, urls, imgs;
-  //   for (let i = 0; i < 9; i++) {
-  //     const img = document.createElement("img");
+  const newItem = document.getElementById('item');
+  const newklik = document.getElementById('klik');
+  const duniaDigi = async () => {
+    const digiApi = await fetch("https://digimon-api.vercel.app/api/digimon");
+    const rensponse = await digiApi.json();
+    // let nama, urls, imgs;
+    
+    newklik.addEventListener("click",()=>{
+      newItem.innerHTML = " ";
+      const randomImg = Math.floor(Math.random() * rensponse.length)
+      const img = document.createElement("img");
       
-  //     img.src = rensponse[i].img;
+      img.src = rensponse[randomImg].img;
 
-  //     newItem.append(img);  
-     
-  //   }
-  //   duniaDigi();
-  //   // console.log(nama);
-  // };
+      newItem.append(img); 
+      
+      
+       
+    })
+    
+    
+    const img = document.createElement("img");
+      
+    img.src = rensponse[0].img;
+
+    newItem.append(img);  
+    
+    // console.log(nama);
+  };
+  duniaDigi();
+
   

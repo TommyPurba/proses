@@ -24,6 +24,6 @@
 
 @layer components{
     .card{
-        @apply bg-white hover:scale-105 transition duration-300 ease-in-out p-8 rounded-3xl shadow-sm bg-ct-font-color text-black;
+        @apply  hover:scale-105 transition duration-300 ease-in-out p-8 rounded-3xl shadow-sm bg-ct-font-color text-black;
     }
 }
