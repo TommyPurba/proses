@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply bg-rose-50/50;
+    }
+    h1{
+        @apply text-4xl font-bold tracking-tight;
+    }
+    h2{
+        @apply text-3xl font-bold tracking-tight;
+    }
+    h3{
+        @apply text-2xl font-bold tracking-tight;
+    }
+    input{
+        @apply w-full bg-transparent  py-2 border-b-[1px] focus:outline-none; 
+    }
+}
+
+@layer components{
+    .card{
+        @apply bg-white hover:scale-105 transition duration-300 ease-in-out p-8 rounded-3xl shadow-sm bg-ct-main-color text-black;
+    }
+}
