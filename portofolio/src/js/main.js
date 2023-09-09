@@ -53,3 +53,22 @@ new Typed('#heading', {
     minute.innerHTML = (currentime.getMinutes()<10 ? "0": "") + currentime.getMinutes();
     second.innerHTML = (currentime.getSeconds()<10 ? "0": "") + currentime.getSeconds();
   },1000)
+
+  // const newItem = document.getElementById('item');
+
+  // const duniaDigi = async () => {
+  //   const digiApi = await fetch("https://digimon-api.vercel.app/api/digimon");
+  //   const rensponse = await digiApi.json();
+  //   // let nama, urls, imgs;
+  //   for (let i = 0; i < 9; i++) {
+  //     const img = document.createElement("img");
+      
+  //     img.src = rensponse[i].img;
+
+  //     newItem.append(img);  
+     
+  //   }
+  //   duniaDigi();
+  //   // console.log(nama);
+  // };
+  
