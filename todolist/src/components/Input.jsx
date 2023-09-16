@@ -24,11 +24,14 @@ export const Input = () => {
   };
 
   return (
-    <div className="flex gap-4">
-      <input value={content} onChange={(e) => setContent(e.target.value)} />
-      <button className="w-fit btn_a" onClick={handleCreateNote}>
-        create
-      </button>
+    <div className="">
+      <div className="text-xl text-center font-bold uppercase mb-2">Todo List</div>
+      <div className="flex gap-4">
+        <input value={content} onChange={(e) => setContent(e.target.value)} placeholder="Todo ..." />
+        <button className="w-fit btn_a uppercase" onClick={handleCreateNote}>
+          add
+        </button>
+      </div>
     </div>
   );
 };
