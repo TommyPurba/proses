@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   input {
+    @apply w-full p-3 border-2 rounded-lg focus:outline-none shadow;
+   }
+
+    
+}
+
+@layer components{
+   .btn_a{
+      @apply w-full p-3 bg-slate-900 hover:bg-slate-700 text-white shadow rounded-lg;
+   }
+   .btn{
+      @apply bg-transparent hover:scale-110;
+   }
+}
