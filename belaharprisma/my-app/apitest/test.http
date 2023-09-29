@@ -1,0 +1,12 @@
+
+POST http://localhost:3000/api/blog
+
+{
+    "email" : "hello@dasd.com",
+    "password" : "1234"
+}
+
+###get
+
+
+GET  http://localhost:3000/api/blog
