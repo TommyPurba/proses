@@ -1,0 +1,13 @@
+### get
+GET http://localhost:3000/api/admin
+
+### post
+POST http://localhost:3000/api/admin
+
+{
+    "username" : "rina",
+    "FullName" : "rina rone",
+    "No_Hp" :"12344324",
+    "Password" : "1234"
+
+}

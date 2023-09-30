@@ -1,5 +1,5 @@
 async function getBlogData() {
-  const data = await fetch("http://localhost:3000/api/blog");
+  const data = await fetch("http://localhost:3001/api/blog");
   const req = await data.json();
   return req;
 }
